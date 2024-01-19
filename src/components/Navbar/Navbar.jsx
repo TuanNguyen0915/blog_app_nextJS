@@ -32,9 +32,10 @@ const Navbar = () => {
       >
         TuanNG
       </div>
-      <div className="hidden w-full items-center justify-end md:flex">
+      <div className="hidden w-full items-center justify-end gap-2 md:flex">
         <Links />
       </div>
+
       <div className={`flex items-center justify-end md:hidden`}>
         <CiMenuFries
           size={40}
@@ -44,15 +45,19 @@ const Navbar = () => {
       </div>
       {/* MOBILE VIEW */}
       {toggleMenuBar && (
-        <div className="animate-slide-in fixed right-0 top-0 z-50 h-screen w-2/3 overflow-y-auto rounded-s-lg bg-[#4D516D]">
+        <div className="fixed right-0 top-0 z-50 h-screen w-2/3 animate-slide-in overflow-y-auto rounded-s-lg bg-[#4D516D]">
           <div className="paraHover p-4">
             <IoIosCloseCircleOutline
               size={40}
               onClick={() => setToggleMenuBar(false)}
             />
           </div>
-          <div className="mr-10 flex flex-col justify-end gap-10">
-            <p className=" text-end text-3xl font-bold text-blue-500">TuanNG</p>
+          <div className="flex flex-col justify-end gap-10 pl-5 pr-10">
+            <div className="flex w-full items-center justify-between">
+              <p className=" text-end text-3xl font-bold text-blue-500">
+                TuanNG
+              </p>
+            </div>
             <div className="flex-end flex items-center justify-end gap-10">
               <FaFacebook
                 size={25}
@@ -68,7 +73,10 @@ const Navbar = () => {
               />
             </div>
             <div className="w-full">
-              <Links toggleMenuBar={toggleMenuBar} setToggleMenuBar={setToggleMenuBar} />
+              <Links
+                toggleMenuBar={toggleMenuBar}
+                setToggleMenuBar={setToggleMenuBar}
+              />
             </div>
           </div>
           {/* NavLink */}
