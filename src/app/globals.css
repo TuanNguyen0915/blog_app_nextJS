@@ -36,7 +36,7 @@ body {
   }
 
   .btn {
-    @apply border border-slate-400 bg-transparent rounded-xl p-2 hover:border-white transition duration-200 ease-in
+    @apply border border-slate-400 bg-transparent rounded-xl p-2 hover:border-white transition duration-200 ease-in flex items-center justify-center
   }
   .btn-read-more {
     @apply bg-slate-400 hover:bg-transparent text-black hover:text-white
