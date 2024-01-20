@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        "slide-in": {
+      "slide-in": {
           "0%": {
             right: "-400px",
           },

@@ -20,7 +20,7 @@ const Links = ({ toggleMenuBar, setToggleMenuBar }) => {
       {links.map((link, idx) => (
         <NavLink key={idx} link={link} setToggleMenuBar={setToggleMenuBar} />
       ))}
-      <AuthLink />
+      <AuthLink setToggleMenuBar={setToggleMenuBar}/>
     </div>
   )
 }

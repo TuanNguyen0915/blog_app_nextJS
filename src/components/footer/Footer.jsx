@@ -10,6 +10,7 @@ const Footer = () => {
               src="/my_pic.jpeg"
               alt="my-pic"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="rounded-full object-cover"
             />
           </div>

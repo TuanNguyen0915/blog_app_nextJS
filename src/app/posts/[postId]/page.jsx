@@ -10,9 +10,11 @@ const PostDetails = () => {
 
   return (
     <div className="flex w-full flex-col gap-10">
-      <div className="flex w-full justify-between gap-10">
-        <div className="w-full flex flex-col gap-[2rem]">
-          <p className="text-4xl">person holding ball. This is {params.postId}</p>
+      <div className="flex w-full flex-col-reverse justify-between gap-10 md:flex-row">
+        <div className="flex w-full flex-col gap-[2rem]">
+          <p className="text-4xl">
+            person holding ball. This is {params.postId}
+          </p>
           <p>
             Desc ==&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Adipisci autem eum, quaerat fuga, sed sapiente deserunt dolores
@@ -47,11 +49,10 @@ const PostDetails = () => {
         </div>
       </div>
       <div className="flex w-full justify-between gap-[2rem]">
-        <div className="w-[60%] flex flex-col gap-5">
-        <Comment />
-
+        <div className="flex w-full flex-col gap-5 md:w-[60%]">
+          <Comment />
         </div>
-        <div className="w-1/3">
+        <div className="hidden w-1/3 md:flex">
           <Menu />
         </div>
       </div>
