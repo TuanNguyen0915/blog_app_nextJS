@@ -6,7 +6,7 @@ import PopulateCategories from "./PopulateCategories"
 import HeroImage from "./HeroImage"
 const Hero = () => {
   return (
-    <header className="mt-[5rem] flex w-full flex-col items-center justify-center gap-4 md:mt-0 md:h-screen">
+    <header className="mt-[5rem] flex w-full flex-col items-center justify-center gap-4 md:mt-0">
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

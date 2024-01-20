@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggleMenuBar, setToggleMenuBar] = useState(false)
 
   return (
-    <div className="flexCenter mb-10 h-[50px] w-full justify-between">
+    <div className="flexCenter mb-10 h-[50px] w-full justify-between border-b border-slate-500 pb-4">
       {/* DESKTOP VIEW */}
       <div className="hidden w-full items-center gap-4 md:flex">
         <FaFacebook

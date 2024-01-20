@@ -5,7 +5,7 @@ import Hero from "@/components/hero/Hero"
 
 export default function Home() {
   return (
-    <main className="w-full gap-10">
+    <main className="w-full gap-10 mt-10">
       <Hero />
       {/* RECENT POST_MOST */}
       <div className="mt-[5rem] flex w-full gap-[4rem] md:flex-row flex-col ">

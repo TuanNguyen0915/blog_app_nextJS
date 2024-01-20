@@ -2,6 +2,7 @@
 import Menu from "@/components/Menu/Menu"
 import CardPost from "../CardPost/CardPost"
 import { motion } from "framer-motion"
+import Pagination from "@/components/pagination/Pagination"
 
 const slideFromLeftVariants = {
   initial: { x: -200, opacity: 0 },
@@ -23,11 +24,13 @@ const RecentMostPosts = () => {
         initial="initial"
         transition="transition"
         whileInView={"animate"}
+        viewport={{ once: true }}
       >
         <h1 className="textTitle">Recent Posts</h1>
         <CardPost />
         <CardPost />
         <CardPost />
+        <Pagination />
       </motion.div>
       {/* MENU */}
       <motion.div
@@ -36,6 +39,7 @@ const RecentMostPosts = () => {
         initial="initial"
         transition="transition"
         whileInView={"animate"}
+        viewport={{ once: true }}
       >
         <Menu />
       </motion.div>
