@@ -2,7 +2,7 @@ import Image from "next/image"
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa"
 const Footer = () => {
   return (
-    <div className="mt-10 flex w-full justify-between flex-col md:flex-row gap-[4rem] border-t pt-4 border-slate-500">
+    <div className="mt-[5rem] flex w-full justify-between flex-col md:flex-row gap-[4rem] border-t pt-4 border-slate-500">
       <div className="flex md:w-[40%] w-full flex-col gap-5">
         <div className="flex items-center gap-2">
           <div className="relative h-[80px] w-[80px] rounded-lg">
